@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador | IFBA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content" style="align-items: center; display: flex;">
+                <audio id="click-sound-logo" src="sounds/444492__breviceps__high-pitched-click.wav"></audio>
+                <a href="#inicio" onclick="document.getElementById('click-sound-logo').currentTime=0;document.getElementById('click-sound-logo').play(); scrollToSection('inicio'); return false;" class="logo" style="display: flex; align-items: center; height: 64px; text-decoration: none; color: inherit;">
+                    <img src="pictures/instituto_federal_da_bahia_softlogo.jpeg" alt="Logo IFBA" class="logo-img" style="height: 56px; width: auto; object-fit: contain;">
+                    <div class="logo-text">
+                        <h1>INSTITUTO FEDERAL DA BAHIA</h1>
+                        <p>Projeto Integrador</p>
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <audio id="click-sound" src="sounds/444492__breviceps__high-pitched-click.wav"></audio>
+                    <a href="#inicio" onclick="playClickSound(); scrollToSection('inicio'); return false;">Início</a>
+                    <a href="#turma" onclick="playClickSound(); scrollToSection('turma'); return false;">Nossa Turma</a>
+                    <a href="#abelhas" onclick="playClickSound(); scrollToSection('abelhas'); return false;">Importância das Abelhas</a>
+                    <a href="#projeto" onclick="playClickSound(); scrollToSection('projeto'); return false;">O Projeto</a>
+                    <a href="#informações" onclick="playClickSound(); scrollToSection('informações'); return false;">Informações</a>
+
+</script>
+                </nav>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="mobile-menu-content">
+                <a href="#inicio" onclick="playClickSound(); scrollToSection('inicio'); return false;">Início</a>
+                <a href="#turma" onclick="playClickSound(); scrollToSection('turma'); return false;">Nossa Turma</a>
+                <a href="#abelhas" onclick="playClickSound(); scrollToSection('abelhas'); return false;">Importância das Abelhas</a>
+                <a href="#projeto" onclick="playClickSound(); scrollToSection('projeto'); return false;">O Projeto</a>
+                <a href="#informações" onclick="playClickSound(); scrollToSection('informações'); return false;">Informações</a>
+                </div>
+            </div>
+            </header>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="badge-icon">🎓</span>
+                        Instituto Federal da Bahia - Campus Euclides da Cunha
+                    </div>
+                    <h1>Projeto <span class="gradient-text">BEETECH</span></h1>
+                    <p>Desenvolvido pela turma do curso técnico de nível médio em informática - Módulo IV (2023/1), este projeto integrador une tecnologia e sustentabilidade para criar um sistema de gestão de produção apícola, fortalecendo a apicultura regional e promovendo o desenvolvimento econômico local.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="playClickSound(); scrollToSection('projeto')">Conheça o Projeto</button>
+                        <button class="btn-secondary" onclick="playClickSound(); scrollToSection('turma')">Nossa Turma</button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="pictures/assapec_logo.jpeg" alt="Apicultura">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-element floating-1"></div>
+                    <div class="floating-element floating-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da Equipe -->
+    <section id="turma" class="team">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <span class="badge-icon">👥</span>
+                    Nossa Equipe
+                </div>
+                <h2>Turma de Informática - Módulo IV</h2>
+                <p>Conheça os 12 estudantes que estão desenvolvendo este projeto, combinando conhecimento técnico com a busca pela sustentabilidade e desenvolvimento regional.</p>
+            </div>
+
+            <div class="team-grid" id="team-grid">
+                <!-- Membros da equipe serão preenchidos pelo JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Importância das Abelhas -->
+    <section id="abelhas" class="bees">
+        <div class="container">
+            <div class="bees-content">
+                <div class="bees-text">
+                    <div class="badge green">
+                        <span class="badge-icon">🌿</span>
+                        Meio Ambiente
+                    </div>
+                    <h2>A Importância das <span class="gradient-text green">Abelhas</span></h2>
+
+                    <div class="importance-list">
+                        <div class="importance-item">
+                            <div class="importance-number">1</div>
+                            <div class="importance-content">
+                                <h3>Polinização</h3>
+                                <p>As abelhas são responsáveis pela polinização de cerca de 75% das culturas alimentares mundiais, garantindo a reprodução de plantas e a produção de alimentos.</p>
+                            </div>
+                        </div>
+
+                        <div class="importance-item">
+                            <div class="importance-number amber">2</div>
+                            <div class="importance-content">
+                                <h3>Biodiversidade</h3>
+                                <p>Elas mantêm o equilíbrio dos ecossistemas, promovendo a diversidade genética das plantas e a preservação de habitats naturais.</p>
+                            </div>
+                        </div>
+
+                        <div class="importance-item">
+                            <div class="importance-number orange">3</div>
+                            <div class="importance-content">
+                                <h3>Economia Local</h3>
+                                <p>A apicultura gera renda sustentável para agricultores familiares, fortalecendo a economia regional através da produção de mel e derivados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        <p>"Eu não sei se é... é um inseto, né? Não! é um animal!"</p>
+                        <p>- Cristiano de Souza</p>
+                    </div>
+                </div>
+
+                <div class="bees-images">
+                    <div class="image-column">
+                        <img src="pictures/abelha_mandacaia.jpeg" alt="Abelha Mandaçaia" class="bee-img tall">
+                        <img src="pictures/favo_de_mel.jpeg" alt="Favo de Mel" class="bee-img short">
+                    </div>
+                    <div class="image-column offset">
+                        <img src="pictures/mel.jpeg" alt="Mel" class="bee-img short">
+                        <img src="pictures/arara_azul_de_lear.jpeg" alt="Arara-azul-de-lear" class="bee-img tall">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Projeto -->
+    <section id="projeto" class="project">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <span class="badge-icon">💡</span>
+                    Inovação e Tecnologia
+                </div>
+                <h2>Nosso Projeto Integrador</h2>
+                <p>Um sistema de gestão de produção apícola para modernizar e fortalecer a apicultura regional, promovendo eficiência e sustentabilidade.</p>
+            </div>
+
+            <div class="project-features">
+                <div class="feature-card">
+                    <div class="feature-icon amber">🐝</div>
+                    <h3>Gestão de Produção</h3>
+                    <p>Sistema completo para controle e acompanhamento da produção apícola, otimizando processos e aumentando a eficiência.</p>
+                    <ul>
+                        <li>• Controle de produção</li>
+                        <li>• Registro de produtos</li>
+                        <li>• Relatórios detalhados</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">🌿</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Ferramentas para promover práticas sustentáveis na apicultura, preservando o meio ambiente e garantindo qualidade.</p>
+                    <ul>
+                        <li>• Boas práticas</li>
+                        <li>• Qualidade</li>
+                        <li>• Preservação</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">👥</div>
+                    <h3>Capacitação</h3>
+                    <p>Recursos e suporte para apicultores, promovendo o conhecimento e a adoção de novas tecnologias.</p>
+                    <ul>
+                        <li>• Treinamentos</li>
+                        <li>• Material técnico</li>
+                        <li>• Suporte técnico</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-goals">
+                <div class="goals-content">
+                    <h3>Objetivos do Projeto</h3>
+                    <div class="goals-grid">
+                        <div class="goal-item">
+                            <div class="goal-check">✓</div>
+                            <div class="goal-text">Gestão Eficiente</div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-check">✓</div>
+                            <div class="goal-text">Produção Otimizada</div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-check">✓</div>
+                            <div class="goal-text">Sustentabilidade</div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-check">✓</div>
+                            <div class="goal-text">Desenvolvimento Regional</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goals-image">
+                    <img src="pictures/equipe.jpeg" alt="Equipe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="informações" class="info">
+        <div class="container">
+            <div class="section-header">
+                <h2>Informações</h2>
+                <p>Procurando mais informações? Segue abaixo!</p>
+            </div>
+
+            <div class="info-content">
+                <div class="info-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h3>Localização</h3>
+                            <p>Instituto Federal da Bahia<br>Campus Euclides da Cunha<br>Euclides da Cunha - BA</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <p>projetointegrador.apicultura@ifba.edu.br<br>informatica.modulo4@ifba.edu.br</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-details">
+                            <h3>Telefone</h3>
+                            <p>(75) 3199-3605<br>(75) 99999-9999</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">📘</a>
+                        <a href="#" class="social-link instagram">📷</a>
+                        <a href="#" class="social-link github">🐙</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                <div class="image-container">
+                    <img src="pictures/ifba_logo.jpeg" alt="Apicultura" style="height: 500px; width: 100%;">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="floating-element floating-1"></div>
+                <div class="floating-element floating-2"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="pictures/instituto_federal_da_bahia_softlogo.jpeg" alt="Logo IFBA" class="logo-img" style="height: 40px; width: auto; object-fit: contain; margin-right: 10px;">
+                        <div class="logo-text">
+                            <h3>INSTITUTO FEDERAL DA BAHIA</h3>
+                            <p>Projeto Integrador</p>
+                        </div>
+                    </div>
+                    <p>Desenvolvido com dedicação pela turma de Informática - Módulo IV do IFBA Campus Euclides da Cunha.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Projeto</h4>
+                    <ul>
+                        <li>Disciplina: Projeto Integrador</li>
+                        <li>Turma: Informática - Módulo IV</li>
+                        <li>Ano: 2025</li>
+                        <li>Campus: Euclides da Cunha</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Instituto</h4>
+                    <ul>
+                        <li>Instituto Federal da Bahia</li>
+                        <li>Campus Euclides da Cunha</li>
+                        <li>Euclides da Cunha - BA</li>
+                        <li>www.ifba.edu.br</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 IFBA - Instituto Federal da Bahia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
